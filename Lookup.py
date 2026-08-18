@@ -40,7 +40,6 @@ tens_mar = {
 }
 
 
-# Convert 1 to 99
 def two_digit(n, ones, tens):
     if n < 20:
         return ones[n]
@@ -48,7 +47,6 @@ def two_digit(n, ones, tens):
     return tens[n // 10] + (" " + ones[n % 10] if n % 10 != 0 else "")
 
 
-# Convert 1 to 999
 def three_digit(n, ones, tens, hundred):
     if n < 100:
         return two_digit(n, ones, tens)
@@ -154,7 +152,6 @@ def marathi(n):
     return result.strip()
 
 
-# Main program
 num = int(input("Enter number (0 to 99999999): "))
 
 if 0 <= num <= 99999999:
